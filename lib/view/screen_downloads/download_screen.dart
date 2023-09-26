@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
+
 import 'package:netflix_clone/utilis/styles/textstyle.dart';
 
 class ScreenDownload extends StatelessWidget {
@@ -24,7 +25,8 @@ class ScreenDownload extends StatelessWidget {
                   ),
                   Text(
                     "Smart Downloads",
-                    style: StyleConstant.stylewhiteclr,
+                    style:
+                        TextStyle(color: ColorConstant.textColor, fontSize: 18),
                   ),
                 ],
               ),
@@ -39,7 +41,7 @@ class ScreenDownload extends StatelessWidget {
                       Text(
                         "Introducing Downloads for you",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: ColorConstant.textColor,
                             fontWeight: FontWeight.bold,
                             fontSize: 22),
                       ),
@@ -67,7 +69,7 @@ class ScreenDownload extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(
-                    backgroundColor: Colors.grey.shade800,
+                    backgroundColor: ColorConstant.greyshade,
                     radius: 80,
                   )
                 ],
@@ -90,14 +92,14 @@ class ScreenDownload extends StatelessWidget {
               ),
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey.shade800,
+                      backgroundColor: ColorConstant.greyshade,
                       minimumSize: Size(239, 33)),
                   onPressed: () {},
                   child: Text(
                     "Find something to dowload",
                     style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
+                        color: ColorConstant.textColor,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold),
                   )),
             ],

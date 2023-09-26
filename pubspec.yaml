@@ -74,6 +74,10 @@ flutter:
     - assets\images\link images\Group 77.png
     - assets\images\link images\images.png
     - assets\icons\Group 76.png
+    - assets\carousel\1.jpg
+    - assets\carousel\2.jpg
+    - assets\carousel\3.jpg
+    - assets\carousel\4.jpg
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

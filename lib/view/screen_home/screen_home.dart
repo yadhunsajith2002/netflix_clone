@@ -21,7 +21,7 @@ class ScreenHome extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                       image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage(DataBaseImages.movies[index]))));
+                          image: AssetImage(DataBaseImages.carousel[index]))));
             },
             options: CarouselOptions(
                 pageSnapping: true,
@@ -42,7 +42,7 @@ class ScreenHome extends StatelessWidget {
                   ),
                   Icon(
                     Icons.add,
-                    color: Colors.white,
+                    color: ColorConstant.textColor,
                   ),
                   Text(
                     "My List",
@@ -53,7 +53,7 @@ class ScreenHome extends StatelessWidget {
             ),
             Container(
                 width: 80,
-                color: Colors.white,
+                color: ColorConstant.textColor,
                 child: Image.asset(
                   "assets/logos/Group 13.jpg",
                   height: 30,
@@ -69,11 +69,11 @@ class ScreenHome extends StatelessWidget {
                   ),
                   Icon(
                     Icons.info,
-                    color: Colors.white,
+                    color: ColorConstant.textColor,
                   ),
                   Text(
                     "Info",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: ColorConstant.textColor),
                   )
                 ],
               ),

@@ -8,6 +8,12 @@ class DataBaseImages {
     "assets/images/Rectangle 5.png",
     "assets/icons/Group 1.png"
   ];
+  static List<String> carousel = [
+    "assets/carousel/1.jpg",
+    "assets/carousel/2.jpg",
+    "assets/carousel/3.jpg",
+    "assets/carousel/4.jpg",
+  ];
 
   static Image logo = Image.asset(
     "assets/images/logos_netflix.png",

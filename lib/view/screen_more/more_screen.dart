@@ -3,7 +3,6 @@ import 'package:netflix_clone/utilis/color_constant/color.dart';
 import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 import 'package:netflix_clone/model/names/names.dart';
 import 'package:netflix_clone/utilis/styles/textstyle.dart';
-import 'package:netflix_clone/view/bottomnavi/bottom_navi.dart';
 
 class MoreScreen extends StatelessWidget {
   const MoreScreen({super.key});
@@ -25,6 +24,8 @@ class MoreScreen extends StatelessWidget {
                 children: [
                   InkWell(
                     child: Container(
+                      height: 100,
+                      width: 85,
                       child: Image.asset(DataBaseImages.gridImages[index]),
                     ),
                   ),
@@ -52,7 +53,7 @@ class MoreScreen extends StatelessWidget {
             ),
             Icon(
               Icons.edit,
-              color: Colors.white,
+              color: ColorConstant.textColor,
             )
           ],
         ),
@@ -75,7 +76,7 @@ class MoreScreen extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.message,
-                      color: Colors.white,
+                      color: ColorConstant.textColor,
                     ),
                     SizedBox(
                       width: 5,
@@ -83,7 +84,7 @@ class MoreScreen extends StatelessWidget {
                     Text(
                       "Tell Friends about Netflix",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: ColorConstant.textColor,
                           fontSize: 20,
                           fontWeight: FontWeight.bold),
                     ),
@@ -187,7 +188,6 @@ class MoreScreen extends StatelessWidget {
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              // mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Image.asset("assets/icons/Group 76.png"),
                 Row(
