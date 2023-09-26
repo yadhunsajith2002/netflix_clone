@@ -67,7 +67,7 @@ class ScreenDownload extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(
-                    backgroundColor: ColorConstant.lightColor,
+                    backgroundColor: Colors.grey.shade800,
                     radius: 80,
                   )
                 ],
@@ -90,7 +90,7 @@ class ScreenDownload extends StatelessWidget {
               ),
               ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.grey.shade700,
+                      backgroundColor: Colors.grey.shade800,
                       minimumSize: Size(239, 33)),
                   onPressed: () {},
                   child: Text(

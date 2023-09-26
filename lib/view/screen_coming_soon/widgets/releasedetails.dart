@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
-import 'package:netflix_clone/utilis/image_constant/database/images/databaseimages.dart';
+import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 import 'package:netflix_clone/utilis/styles/textstyle.dart';
 
 class ReleaseDetails extends StatelessWidget {
-  const ReleaseDetails({super.key});
+  ReleaseDetails({super.key, required this.index});
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class ReleaseDetails extends StatelessWidget {
             decoration: BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: AssetImage(DataBaseImages.movies[5]))),
+                    image: AssetImage(DataBaseImages.movies[index]))),
           ),
           Container(
             height: 230,

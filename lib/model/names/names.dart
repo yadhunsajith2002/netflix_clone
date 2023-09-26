@@ -24,4 +24,12 @@ class Names {
     "Cyindria",
     "Add profile",
   ];
+
+  static List<String> headings = [
+    "Continue to Watch",
+    "Popular release",
+    "Most visited",
+    "HollyWood",
+    "KollyWood"
+  ];
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
-import 'package:netflix_clone/utilis/image_constant/database/images/databaseimages.dart';
-import 'package:netflix_clone/utilis/names/names.dart';
+import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
+import 'package:netflix_clone/model/names/names.dart';
 import 'package:netflix_clone/view/bottomnavi/bottom_navi.dart';
 
 class HomeScreen extends StatelessWidget {

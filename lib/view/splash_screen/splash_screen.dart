@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:netflix_clone/utilis/image_constant/database/images/databaseimages.dart';
+import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 
 import 'package:netflix_clone/view/username_screen/username_screen.dart';
 
