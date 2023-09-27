@@ -22,9 +22,12 @@ class DataBaseImages {
   );
 
   static List<String> movies = [
+    "assets/carousel/1.jpg",
+    "assets/carousel/4.jpg",
     "assets/images/movies/movie1.jpeg",
     "assets/images/movies/movie2.jpeg",
     "assets/images/movies/movie3.jpeg",
+    "assets/carousel/3.jpg",
     "assets/images/movies/movie4.jpeg",
     "assets/images/movies/movie5.jpeg",
     "assets/images/movies/movie6.jpeg",

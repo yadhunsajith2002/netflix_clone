@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
 
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(
-      const Duration(milliseconds: 3000),
+      const Duration(seconds: 5),
       () {
         Navigator.of(context).push(
           MaterialPageRoute(
@@ -38,13 +39,12 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(height: 55, width: 202, child: DataBaseImages.logo),
+            Container(
+                color: Colors.black,
+                child: Lottie.asset("assets/json/animation_lmu8f7yk.json")),
             SizedBox(
               height: 15,
             ),
-            CircularProgressIndicator(
-              color: Colors.red,
-            )
           ],
         ),
       ),

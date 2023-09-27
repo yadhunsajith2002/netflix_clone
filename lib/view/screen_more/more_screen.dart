@@ -14,31 +14,34 @@ class MoreScreen extends StatelessWidget {
         SizedBox(
           height: 30,
         ),
-        Container(
-          height: MediaQuery.of(context).size.height * 0.15,
-          child: ListView.builder(
-            itemCount: DataBaseImages.gridImages.length,
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (context, index) {
-              return Column(
-                children: [
-                  InkWell(
-                    child: Container(
-                      height: 100,
-                      width: 85,
-                      child: Image.asset(DataBaseImages.gridImages[index]),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            height: MediaQuery.of(context).size.height * 0.15,
+            child: ListView.builder(
+              itemCount: DataBaseImages.gridImages.length,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Column(
+                  children: [
+                    InkWell(
+                      child: Container(
+                        height: 100,
+                        width: 80,
+                        child: Image.asset(DataBaseImages.gridImages[index]),
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text(
-                    Names.names[index],
-                    style: TextStyle(color: ColorConstant.textColor),
-                  )
-                ],
-              );
-            },
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      Names.names[index],
+                      style: TextStyle(color: ColorConstant.textColor),
+                    )
+                  ],
+                );
+              },
+            ),
           ),
         ),
         SizedBox(

@@ -32,6 +32,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_carousel_widget: ^2.1.0
+  lottie: ^2.6.0
   overlapped_carousel: ^1.0.1
 
 dev_dependencies:
@@ -78,6 +79,7 @@ flutter:
     - assets\carousel\2.jpg
     - assets\carousel\3.jpg
     - assets\carousel\4.jpg
+    - assets\json\animation_lmu8f7yk.json
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
