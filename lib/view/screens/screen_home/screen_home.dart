@@ -43,18 +43,18 @@ class ScreenHome extends StatelessWidget {
                 itemBuilder: (context, index, realIndex) {
                   return Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
                           image: DecorationImage(
                               fit: BoxFit.cover,
                               image:
                                   AssetImage(DataBaseImages.carousel[index]))));
                 },
                 options: CarouselOptions(
+                    viewportFraction: 1,
                     pageSnapping: true,
                     autoPlayCurve: Curves.easeInCirc,
                     showIndicator: false,
                     autoPlay: true,
-                    height: MediaQuery.of(context).size.height * 0.4)),
+                    height: MediaQuery.of(context).size.height * 0.5)),
           ),
           SliverList(
               delegate:
@@ -85,7 +85,10 @@ class ScreenHome extends StatelessWidget {
                     ),
                     Container(
                         width: 80,
-                        color: ColorConstant.textColor,
+                        height: 30,
+                        decoration: BoxDecoration(
+                            color: ColorConstant.textColor,
+                            borderRadius: BorderRadius.circular(8)),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [

@@ -22,23 +22,26 @@ class MoreScreen extends StatelessWidget {
               itemCount: DataBaseImages.gridImages.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    InkWell(
-                      child: Container(
-                        height: 100,
-                        width: 80,
-                        child: Image.asset(DataBaseImages.gridImages[index]),
+                return Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: Column(
+                    children: [
+                      InkWell(
+                        child: Container(
+                          height: 100,
+                          width: 80,
+                          child: Image.asset(DataBaseImages.gridImages[index]),
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      Names.names[index],
-                      style: TextStyle(color: ColorConstant.textColor),
-                    )
-                  ],
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Text(
+                        Names.names[index],
+                        style: TextStyle(color: ColorConstant.textColor),
+                      )
+                    ],
+                  ),
                 );
               },
             ),
@@ -157,11 +160,6 @@ class MoreScreen extends StatelessWidget {
                         child: Column(
                           children: [
                             InkWell(
-                              // onTap: () {
-                              //   Navigator.of(context).push(MaterialPageRoute(
-                              //     builder: (context) => MainScreen(),
-                              //   ));
-                              // },
                               child: Container(
                                 child: Image.asset(
                                   DataBaseImages.linkImages[index],

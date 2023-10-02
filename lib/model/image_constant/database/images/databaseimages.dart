@@ -37,9 +37,9 @@ class DataBaseImages {
   ];
 
   static List<String> linkImages = [
-    "assets/images/link images/download.jpeg",
-    "assets/images/link images/download.png",
-    "assets/images/link images/images.png",
+    "assets/images/link images/whatsapp.png",
+    "assets/images/link images/facebook.png",
+    "assets/images/link images/gmail.png",
     "assets/images/link images/Group 77.png",
   ];
 }

@@ -35,12 +35,13 @@ dependencies:
   flutter_launcher_icons: ^0.13.1
   lottie: ^2.6.0
   overlapped_carousel: ^1.0.1
- 
+  youtube_player_flutter: ^8.1.2
+
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/icons/netflixlogo.0.0.1466448626.jpeg"
-  min_sdk_android: 21 # android min sdk min:16, default 21 
+  min_sdk_android: 21 # android min sdk min:16, default 21
 
 dev_dependencies:
   flutter_lints: ^2.0.0
@@ -78,9 +79,10 @@ flutter:
     - assets\logos\logos_netflix-icon.png
     - assets\logos\Group 49.png
     - assets\images\Rectangle 26.jpg
-    - assets\images\link images\download.png
+    - assets\images\link images\gmail.png
+    - assets\images\link images\whatsapp.png
     - assets\images\link images\Group 77.png
-    - assets\images\link images\images.png
+    - assets\images\link images\facebook.png
     - assets\icons\Group 76.png
     - assets\carousel\1.jpg
     - assets\carousel\2.jpg

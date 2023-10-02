@@ -14,6 +14,9 @@ class HomeScreen extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: [
+              SizedBox(
+                height: 15,
+              ),
               Row(
                 children: [
                   SizedBox(

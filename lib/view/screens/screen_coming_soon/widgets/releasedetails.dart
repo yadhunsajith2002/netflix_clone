@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
 import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 import 'package:netflix_clone/utilis/styles/textstyle.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class ReleaseDetails extends StatelessWidget {
   ReleaseDetails({super.key, required this.index});
@@ -9,19 +10,26 @@ class ReleaseDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    YoutubePlayerController _controller = YoutubePlayerController(
+        initialVideoId: 'D7eFpRf4tac',
+        flags: YoutubePlayerFlags(autoPlay: true, mute: false));
     return Container(
-      height: 420,
+      height: 450,
       width: double.infinity,
-      color: Colors.grey,
+      color: Colors.black,
       child: Column(
         children: [
           Container(
-            height: 190,
+            height: 200,
             width: double.infinity,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(DataBaseImages.movies[index]))),
+            // decoration: BoxDecoration(
+            //     image: DecorationImage(
+            //         fit: BoxFit.cover,
+            //         image: AssetImage(DataBaseImages.movies[index]))),
+            child: YoutubePlayer(controller: _controller),
+          ),
+          SizedBox(
+            height: 10,
           ),
           Container(
             height: 230,
