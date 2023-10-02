@@ -10,28 +10,24 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: ColorConstant.primaryColor,
+          centerTitle: true,
+          title: DataBaseImages.logo,
+          actions: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Icon(
+                Icons.edit,
+                color: Colors.white,
+              ),
+            )
+          ],
+        ),
         backgroundColor: ColorConstant.primaryColor,
         body: SafeArea(
           child: Column(
             children: [
-              SizedBox(
-                height: 15,
-              ),
-              Row(
-                children: [
-                  SizedBox(
-                    width: 150,
-                  ),
-                  DataBaseImages.logo,
-                  SizedBox(
-                    width: 100,
-                  ),
-                  Icon(
-                    Icons.edit,
-                    color: Colors.white,
-                  )
-                ],
-              ),
               SizedBox(
                 height: 100,
               ),

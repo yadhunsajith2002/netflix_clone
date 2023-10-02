@@ -3,6 +3,7 @@ import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 import 'package:netflix_clone/model/names/names.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
 import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
+import 'package:netflix_clone/utilis/styles/textstyle.dart';
 import 'package:netflix_clone/view/screens/screen_home/widgets/contaner_scroll.dart';
 import 'package:netflix_clone/view/screens/screen_home/widgets/previewscroll.dart';
 
@@ -61,6 +62,13 @@ class ScreenHome extends StatelessWidget {
                   SliverChildBuilderDelegate(childCount: 1, (context, index) {
             return Column(
               children: [
+                SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "#2 in Groot today",
+                  style: TextStyle(fontSize: 18, color: Colors.white),
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [

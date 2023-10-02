@@ -12,7 +12,7 @@ class ReleaseDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     YoutubePlayerController _controller = YoutubePlayerController(
         initialVideoId: 'D7eFpRf4tac',
-        flags: YoutubePlayerFlags(autoPlay: true, mute: false));
+        flags: YoutubePlayerFlags(autoPlay: true, mute: true));
     return Container(
       height: 450,
       width: double.infinity,
@@ -22,11 +22,9 @@ class ReleaseDetails extends StatelessWidget {
           Container(
             height: 200,
             width: double.infinity,
-            // decoration: BoxDecoration(
-            //     image: DecorationImage(
-            //         fit: BoxFit.cover,
-            //         image: AssetImage(DataBaseImages.movies[index]))),
-            child: YoutubePlayer(controller: _controller),
+            child: YoutubePlayer(
+              controller: _controller,
+            ),
           ),
           SizedBox(
             height: 10,
