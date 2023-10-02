@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
-import 'package:netflix_clone/view/screen_coming_soon/comingsoon-screen.dart';
-import 'package:netflix_clone/view/screen_downloads/download_screen.dart';
-import 'package:netflix_clone/view/screen_home/screen_home.dart';
-import 'package:netflix_clone/view/screen_more/more_screen.dart';
-import 'package:netflix_clone/view/screen_search/screen_search.dart';
+import 'package:netflix_clone/view/screens/screen_coming_soon/comingsoon-screen.dart';
+import 'package:netflix_clone/view/screens/screen_downloads/download_screen.dart';
+import 'package:netflix_clone/view/screens/screen_home/screen_home.dart';
+import 'package:netflix_clone/view/screens/screen_more/more_screen.dart';
+import 'package:netflix_clone/view/screens/screen_search/screen_search.dart';
 
 class MainScreen extends StatefulWidget {
   MainScreen({super.key});

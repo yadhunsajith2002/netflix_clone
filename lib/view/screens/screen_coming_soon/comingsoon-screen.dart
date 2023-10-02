@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
 import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 import 'package:netflix_clone/utilis/styles/textstyle.dart';
-import 'package:netflix_clone/view/screen_coming_soon/widgets/relaese_movies.dart';
-import 'package:netflix_clone/view/screen_coming_soon/widgets/releasedetails.dart';
+import 'package:netflix_clone/view/screens/screen_coming_soon/widgets/relaese_movies.dart';
+import 'package:netflix_clone/view/screens/screen_coming_soon/widgets/releasedetails.dart';
 
 class ComingSoonScreen extends StatelessWidget {
   const ComingSoonScreen({super.key});

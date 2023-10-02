@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
 import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 import 'package:netflix_clone/model/names/names.dart';
-import 'package:netflix_clone/view/screen_search/widgets/search_container.dart';
+import 'package:netflix_clone/view/screens/screen_search/widgets/search_container.dart';
 
 class Screensearch extends StatelessWidget {
   const Screensearch({super.key});
