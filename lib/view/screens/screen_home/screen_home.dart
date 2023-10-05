@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
+import 'package:netflix_clone/model/database/database.dart';
 import 'package:netflix_clone/model/names/names.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
-import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
-import 'package:netflix_clone/utilis/styles/textstyle.dart';
+
 import 'package:netflix_clone/view/screens/screen_home/widgets/contaner_scroll.dart';
 import 'package:netflix_clone/view/screens/screen_home/widgets/continuewatch.dart';
 import 'package:netflix_clone/view/screens/screen_home/widgets/previewscroll.dart';
 
+// ignore: must_be_immutable
 class ScreenHome extends StatelessWidget {
   ScreenHome({super.key});
   TextStyle style = TextStyle(fontSize: 18);
@@ -41,14 +42,14 @@ class ScreenHome extends StatelessWidget {
             expandedHeight: 400,
             pinned: false,
             flexibleSpace: FlutterCarousel.builder(
-                itemCount: DataBaseImages.carousel.length,
+                itemCount: 4,
                 itemBuilder: (context, index, realIndex) {
                   return Container(
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               fit: BoxFit.cover,
-                              image:
-                                  AssetImage(DataBaseImages.carousel[index]))));
+                              image: AssetImage(LocalDatabase
+                                  .localdatabase[index]['image']))));
                 },
                 options: CarouselOptions(
                     viewportFraction: 1,

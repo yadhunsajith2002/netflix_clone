@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
+import 'package:netflix_clone/model/database/database.dart';
+
 import 'package:netflix_clone/utilis/color_constant/color.dart';
 
 class ContinueWatching extends StatefulWidget {
@@ -27,7 +28,8 @@ class _ContinueWatchingState extends State<ContinueWatching> {
                     height: 130,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage(DataBaseImages.movies[index]),
+                          image: AssetImage(
+                              LocalDatabase.localdatabase[index + 1]['image']),
                           fit: BoxFit.cover),
                     ),
                   ),
@@ -66,7 +68,7 @@ class _ContinueWatchingState extends State<ContinueWatching> {
                 width: 10,
               );
             },
-            itemCount: DataBaseImages.movies.length),
+            itemCount: LocalDatabase.localdatabase.length - 1),
       ),
     );
   }

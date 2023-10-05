@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
-import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
+
 import 'package:netflix_clone/utilis/styles/textstyle.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 

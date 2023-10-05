@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/model/database/database.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
-import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
-import 'package:netflix_clone/model/names/names.dart';
+
 import 'package:netflix_clone/view/screens/screen_search/widgets/search_container.dart';
 
 class Screensearch extends StatelessWidget {
@@ -47,13 +47,13 @@ class Screensearch extends StatelessWidget {
           ),
         ),
         ListView.builder(
-          itemCount: DataBaseImages.movies.length,
+          itemCount: LocalDatabase.localdatabase.length,
           physics: NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           itemBuilder: (context, index) {
             return SearchContainer(
-                names: Names.topSearch[index],
-                images: DataBaseImages.movies[index]);
+                names: LocalDatabase.localdatabase[index]['search'],
+                images: LocalDatabase.localdatabase[index]['image']);
           },
         )
       ],

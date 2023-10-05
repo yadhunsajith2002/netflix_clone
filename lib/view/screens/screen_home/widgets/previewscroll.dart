@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_clone/model/database/database.dart';
 import 'package:netflix_clone/utilis/color_constant/color.dart';
-import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 
 class PreviewScroll extends StatelessWidget {
   const PreviewScroll({super.key});
@@ -26,14 +26,15 @@ class PreviewScroll extends StatelessWidget {
         Container(
           height: 160,
           child: ListView.builder(
-            itemCount: DataBaseImages.movies.length,
+            itemCount: LocalDatabase.localdatabase.length,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 5),
                 child: CircleAvatar(
                   radius: 50,
-                  backgroundImage: AssetImage(DataBaseImages.movies[index]),
+                  backgroundImage:
+                      AssetImage(LocalDatabase.localdatabase[index]['image']),
                 ),
               );
             },

@@ -6,30 +6,4 @@ class Names {
     "Cyindria",
     "Add profile"
   ];
-
-  static List<String> topSearch = [
-    "Citition",
-    "ozyvaka",
-    "Joeleno",
-    "Cyindria",
-    "Add profile",
-    "Emenalo",
-    "ozyvaka",
-    "Joeleno",
-    "Cyindria",
-    "Add profile",
-    "Emenalo",
-    "ozyvaka",
-    "Joeleno",
-    "Cyindria",
-    "Add profile",
-  ];
-
-  static List<String> headings = [
-    "Thriller",
-    "Popular release",
-    "Most visited",
-    "HollyWood",
-    "KollyWood"
-  ];
 }
