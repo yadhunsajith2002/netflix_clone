@@ -26,7 +26,7 @@ class SearchContainer extends StatelessWidget {
               width: 10,
             ),
             Container(
-              width: 250,
+              width: MediaQuery.of(context).size.width * 0.6,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

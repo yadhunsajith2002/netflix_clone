@@ -11,8 +11,10 @@ class DataBaseImages {
   static List<String> carousel = [
     "assets/carousel/1.jpg",
     "assets/carousel/2.jpg",
-    "assets/carousel/3.jpg",
     "assets/carousel/4.jpg",
+    "assets/carousel/carousdel7.jpg",
+    "assets/carousel/carousel5.jpg",
+    "assets/carousel/carousel6.jpg",
   ];
 
   static Image logo = Image.asset(
@@ -27,8 +29,10 @@ class DataBaseImages {
     "assets/images/movies/movie1.jpeg",
     "assets/images/movies/movie2.jpeg",
     "assets/images/movies/movie3.jpeg",
-    "assets/carousel/3.jpg",
     "assets/images/movies/movie4.jpeg",
+    "assets/carousel/carousdel7.jpg",
+    "assets/carousel/carousel5.jpg",
+    "assets/carousel/carousel6.jpg",
     "assets/images/movies/movie5.jpeg",
     "assets/images/movies/movie6.jpeg",
     "assets/images/movies/movie7.jpeg",

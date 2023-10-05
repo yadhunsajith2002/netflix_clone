@@ -22,7 +22,7 @@ class Screensearch extends StatelessWidget {
                 color: ColorConstant.textColor,
               ),
               Text(
-                "Search for a show,movie,gnre,etc..",
+                "Search for a show,movie,genre,etc..",
                 style: TextStyle(fontSize: 18, color: ColorConstant.lightColor),
               ),
               Icon(

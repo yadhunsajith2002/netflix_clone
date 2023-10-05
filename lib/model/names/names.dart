@@ -26,7 +26,7 @@ class Names {
   ];
 
   static List<String> headings = [
-    "Continue to Watch",
+    "Thriller",
     "Popular release",
     "Most visited",
     "HollyWood",

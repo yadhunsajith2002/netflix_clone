@@ -5,11 +5,12 @@ import 'package:netflix_clone/utilis/color_constant/color.dart';
 import 'package:netflix_clone/model/image_constant/database/images/databaseimages.dart';
 import 'package:netflix_clone/utilis/styles/textstyle.dart';
 import 'package:netflix_clone/view/screens/screen_home/widgets/contaner_scroll.dart';
+import 'package:netflix_clone/view/screens/screen_home/widgets/continuewatch.dart';
 import 'package:netflix_clone/view/screens/screen_home/widgets/previewscroll.dart';
 
 class ScreenHome extends StatelessWidget {
   ScreenHome({super.key});
-  TextStyle style = TextStyle(fontSize: 15);
+  TextStyle style = TextStyle(fontSize: 18);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,10 +38,10 @@ class ScreenHome extends StatelessWidget {
               ],
             ),
             backgroundColor: Colors.transparent,
-            expandedHeight: 300,
+            expandedHeight: 400,
             pinned: false,
             flexibleSpace: FlutterCarousel.builder(
-                itemCount: 4,
+                itemCount: DataBaseImages.carousel.length,
                 itemBuilder: (context, index, realIndex) {
                   return Container(
                       decoration: BoxDecoration(
@@ -133,6 +134,21 @@ class ScreenHome extends StatelessWidget {
                   height: 10,
                 ),
                 PreviewScroll(),
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        "Continue to watch Movie",
+                        style: TextStyle(
+                            color: ColorConstant.textColor,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 22),
+                      ),
+                    ),
+                  ],
+                ),
+                ContinueWatching(),
                 ListView.builder(
                   shrinkWrap: true,
                   primary: true,
